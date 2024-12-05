@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce method in js</title>
+</head>
+<body>
+    <h2>
+        reduce(): Reduce an array to a single value by applying a function.
+    </h2>
+    <script>
+        // Original array 
+        const numbers = [1, 2, 3, 4, 5]; 
+        // Reducing array to get the sum of all numbers 
+        const sum = numbers.reduce((acc, num) => acc + num, 0); 
+        console.log(sum); // Output: 15
+
+
+        // Original array second
+const numbers1 = [1, 2, 3, 4, 5];
+// Reducing array to get the sum of all numbers1
+const sum1 = numbers1.reduce((acc, num) => acc + num, 0);
+console.log(sum); // Output: 15
+// Printing the second value of the array
+console.log(numbers1[1]); // Output: 2
+
+
+// Original array 3rd exp
+const numbers3 = [1, 2, 3, 4, 5];
+// Using reduce to get the second value
+const secondValue = numbers3.reduce((acc, num, index) => {
+    if (index === 1) {
+        return num; // Second value when index is 1
+    }
+    return acc;
+}, null);
+console.log(secondValue); // Output: 2
+
+
+//exp 4
+// Original array
+const numbers4 = [5, 1, 8, 3, 9, 2];
+// Using reduce to find the maximum value
+const max = numbers4.reduce((acc, num) => (num > acc ? num : acc), numbers4[0]);
+console.log(max); // Output: 9
+
+
+//exp 5
+// Original array
+const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+// Using reduce to count occurrences of each fruit
+const fruitCount = fruits.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {});
+console.log(fruitCount); // Output: { apple: 3, banana: 2, orange: 1 }
+
+
+//exp 6
+// Original nested array
+const nestedArray = [[1, 2, 3], [4, 5], [6, 7, 8, 9]];
+// Using reduce to flatten the nested array
+const flattenedArray = nestedArray.reduce((acc, val) => acc.concat(val), []);
+console.log(flattenedArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+//exp 7
+
+    </script>
+    
+</body>
+</html>

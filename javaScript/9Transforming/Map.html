@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map in js</title>
+</head>
+<body>
+    <h2>map(): Transform each element in an array and create a new array.</h2>
+    
+    <script>
+        // Original array 
+        const numbers = [1, 2, 3, 4, 5]; 
+        // Transforming array using map to get squares 
+        const squares = numbers.map(num => num * num); 
+        console.log(squares); // Output: [1, 4, 9, 16, 25]
+
+
+        //second example
+            // Original array of objects
+        const users = [
+             { name: "Alice", age: 25 },
+           { name: "Bob", age: 30 },
+            { name: "Charlie", age: 35 }
+        ];
+      // Transforming objects to get names only
+       const userNames = users.map(user => user.name);
+       console.log(userNames); // Output: ['Alice', 'Bob', 'Charlie']
+
+    </script>
+</body>
+</html>

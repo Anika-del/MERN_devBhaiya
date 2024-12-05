@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join in js</title>
+</head>
+<body>
+    <h2>
+<pre>
+    Explanation:
+The join() method joins all elements of an array into a single string, with a specified separator between each element.
+
+By default, if no separator is provided, elements are joined with a comma.
+
+You can use any string as a separator, including hyphens, spaces, or even an empty string.
+</pre>
+    </h2>
+    <script>
+        //Basic use 
+        // Original array
+const fruits = ['apple', 'banana', 'cherry'];
+// Using join to create a single string
+const fruitString = fruits.join(', ');
+console.log(fruitString); // Output: 'apple, banana, cherry'
+
+
+//Joining with Different Separators
+// Original array
+const numbers = [1, 2, 3, 4, 5];
+// Joining with a hyphen
+const hyphenJoined = numbers.join('-');
+console.log(hyphenJoined); // Output: '1-2-3-4-5'
+// Joining with no separator (empty string)
+const noSeparator = numbers.join('');
+console.log(noSeparator); // Output: '12345'
+// Joining with a space
+const spaceJoined = numbers.join(' ');
+console.log(spaceJoined); // Output: '1 2 3 4 5'
+
+
+//Example: Joining Objects in an Array
+// Array of objects
+const people = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 35 }
+];
+// Joining names using map and join
+const names = people.map(person => person.name).join(', ');
+console.log(names); // Output: 'Alice, Bob, Charlie'
+
+
+//
+    </script>
+</body>
+</html>

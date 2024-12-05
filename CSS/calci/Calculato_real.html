@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid learning</title>
+  <style>
+    .mainGridDiv {
+      margin-left: 450px;
+      margin-top: 70px;
+      width: 400px;
+      height: 400px;
+      background-color: rgb(187, 219, 240);
+      color: #000;
+      display: grid;
+      grid-template-rows: repeat(5, 1fr); 
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 2px;
+      text-align: center;
+      font-size: 50px;
+    }
+    
+    .boxes {
+      background-color: rgb(219, 211, 219);
+      border: 1px solid;
+      border-radius: 5px;
+    }
+    #box1 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    #box12 {
+      grid-row-start: 4;
+      grid-row-end: 6;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      background-color: blue;
+    }
+    /* #box13 {
+      grid-row-start: 4;
+      grid-row-end: 5;
+    } */
+    #box14 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    /* #box15 {
+     background-color: blue;
+    } */
+
+  </style>
+</head>
+<body>
+  <div class="mainGridDiv">
+    <div class="boxes" id="box1"></div>
+    <div class="boxes">7</div>
+    <div class="boxes">8</div>
+    <div class="boxes">9</div>
+    <div class="boxes">x</div>
+    <div class="boxes">4</div>
+    <div class="boxes">5</div>
+    <div class="boxes">6</div>
+    <div class="boxes">-</div>
+    <div class="boxes">1</div>
+    <div class="boxes">2</div>
+    <div class="boxes" id="box12">=</div>
+    <div class="boxes" id="box13">3</div>
+    <div class="boxes" id="box14">/</div>
+    <div class="boxes" id="box15">0</div>
+  </div>
+</body>
+</html>

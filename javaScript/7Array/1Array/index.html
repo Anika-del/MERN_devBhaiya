@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<body lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    This is array starting
+
+<script>
+ 
+
+let t = 5;    //  5 50 33 54 
+let ram = 50;
+let vijay = 33;
+let akash  = 54;
+
+let name = "ajay";
+let s1 = "alok";
+let s2 = "bikash";
+
+// array 
+let arr = [50,55,57,98,22,33,54,34];
+
+//one by one print krna all elements
+// console.log(a[0]);
+// console.log(a[1]);
+// console.log(a[2]);
+// console.log(a[3]);
+// console.log(a[4]);
+// console.log(a[5]);
+// console.log(a[6]);
+// console.log(a[7]);
+
+//but if array me loop use kre to 
+for(let i = 0; i<=7; i++){
+  console.log(arr[i]); 
+}
+
+
+let myArray = [22, "hello", true];
+console.log(myArray);
+
+//2d array
+let newArray = [[33,55,44], [99,11,22]];
+console.log(newArray[0][1]);
+console.log(newArray[1][2]);
+
+//print 2d array
+for(let i = 0; i<=1; i++){
+  for(let j = 0; j<=2; j++){
+    console.log(newArray[i][j]);
+  }
+}
+
+//key and value array
+let objArray =
+ [
+  {
+  name:"ajay",  //0
+  age:55
+ }, 
+  {
+  name:"vinay",  //1
+  age:66
+ }, 
+  {
+  name:"rupesh",  //2
+  age : 54
+ }
+];
+console.log(objArray[0].name + " and " + objArray[2].age) ;
+
+
+let myNewArray = [8,5,4,3];
+// myNewArray[0]; //8
+// myNewArray[1];  //5
+// myNewArray[2];  //4
+// myNewArray[3];  //3
+// 8+5+4+3 = 20
+let sum = myNewArray[0]+myNewArray[1]+myNewArray[2]+myNewArray[3];
+console.log(sum);
+
+//////////////////////////////////////////////////////////////////////////////
+let finalsum = 0;   //8 //13 // 17 //20
+for(let i = 0; i<myNewArray.length; i++){
+ finalsum = finalsum + myNewArray[i];  //0+8 = 8 //  8+5 = 13  // 13+4 = 17 //  17+3 = 20
+}
+console.log(finalsum);
+
+/////////////////////////////////////////////////////
+//Methods of array
+
+// push method
+// let fruit = ["apple", "mango", "gauva"];
+// console.log(fruit);
+// fruit.push("orange");
+// fruit.push("banana");
+// console.log(fruit);
+
+// pop method
+// let fruit2 = ["apple", "mango", "gauva"];
+// console.log(fruit2); 
+// fruit2.pop();
+// console.log(fruit2);
+// fruit2.pop();
+// console.log(fruit2);
+
+// unshift method
+// let fruit3 = ["apple", "mango", "gauva"];
+// console.log(fruit3);
+// fruit3.unshift("grapse");
+// console.log(fruit3);
+
+//shift method 
+// let fruit4 = ["apple", "mango", "gauva"];
+// console.log(fruit4);
+// fruit4.shift();
+// console.log(fruit4);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Original array of objects
+const people = [
+    { name: 'Alice', age: 30 },
+    { name: 'Bob', age: 20 },
+    { name: 'Charlie', age: 30 },
+    { name: 'David', age: 20 }
+];
+
+// Using reduce to group people by age
+const groupedByAge = people.reduce((acc, person) => {
+    const { age } = person;
+    if (!acc[age]) {
+        acc[age] = [];
+    }
+    acc[age].push(person);
+    return acc;
+}, {});
+
+console.log(groupedByAge);
+// Output:
+// {
+//   '20': [ { name: 'Bob', age: 20 }, { name: 'David', age: 20 } ],
+//   '30': [ { name: 'Alice', age: 30 }, { name: 'Charlie', age: 30 } ]
+// }
+
+    </script>
+</body>
+</html>

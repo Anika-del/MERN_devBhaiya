@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort in array in js</title>
+</head>
+<body>
+    <h2>
+      <pre>
+        The sort() method sorts the elements of an array in place and returns the sorted array.
+
+By default, sort() converts elements to strings and sorts them in ascending order.
+
+To sort numbers correctly, you need to provide a compare function, as shown in the examples.
+
+For strings, you can use localeCompare to sort them in different orders.
+      </pre>  
+    </h2>
+    <script>
+        // Original array of numbers
+        //Example 1: Sorting Numbers in Ascending Order
+const numbers = [5, 3, 8, 1, 2];
+// Using sort to sort numbers in ascending order
+numbers.sort((a, b) => a - b);
+console.log(numbers); // Output: [1, 2, 3, 5, 8]
+
+
+//Example 2: Sorting Numbers in Descending Order
+// Original array of numbers
+const numbers2 = [5, 3, 8, 1, 2];
+// Using sort to sort numbers2 in descending order
+numbers2.sort((a, b) => b - a);
+console.log(numbers2); // Output: [8, 5, 3, 2, 1]
+
+
+//Example 3: Sorting Strings Alphabetically
+// Original array of strings
+const fruits = ['apple', 'orange', 'banana', 'mango'];
+// Using sort to sort strings alphabetically
+fruits.sort();
+console.log(fruits); // Output: ['apple', 'banana', 'mango', 'orange']
+
+
+//Example 4: Sorting Strings in Reverse Alphabetical Order
+// Original array of strings
+const fruits2 = ['apple', 'orange', 'banana', 'mango'];
+// Using sort to sort strings in reverse alphabetical order
+fruits2.sort((a, b) => b.localeCompare(a));
+console.log(fruits2); // Output: ['orange', 'mango', 'banana', 'apple']
+
+
+//Example 5: Sorting Objects by Property Value
+// Original array of objects
+const people = [
+    { name: 'Alice', age: 30 },
+    { name: 'Bob', age: 20 },
+    { name: 'Charlie', age: 25 }
+];
+// Using sort to sort objects by age in ascending order
+people.sort((a, b) => a.age - b.age);
+console.log(people);
+// Output:
+// [
+//   { name: 'Bob', age: 20 },
+//   { name: 'Charlie', age: 25 },
+//   { name: 'Alice', age: 30 }
+// ]
+
+    </script>
+</body>
+</html>

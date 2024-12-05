@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid learning</title>
+  <style>
+    .mainGridDiv{
+      width: 600px;
+      height: 600px;
+      background-color: rgb(228, 228, 142);
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns:repeat(3, 1fr); 
+      grid-template-areas: 
+      'head head head' 
+      'leftside main rightside'
+      'footer footer footer'
+      ;
+    }
+    .boxes{
+      background-color: purple;
+      /* width: 100px;
+      height: 100px; */
+      border: 1px solid;
+    }
+  #box1{
+   grid-area: head;
+  }
+  #box2{
+    grid-area: leftside;
+  }
+  #box3{
+    grid-area: main;
+  }
+  #box4{
+    grid-area: rightside;
+  }
+  #box5{
+    grid-area: footer;
+  }
+  </style>
+</head>
+<body>
+  <div class="mainGridDiv">
+    <div class="boxes" id="box1">div1</div>
+    <div class="boxes" id="box2">div2</div>
+    <div class="boxes" id="box3">div3</div>
+    <div class="boxes" id="box4">div1</div>
+    <div class="boxes" id="box5">div2</div>
+    <!-- <div class="boxes">div3</div> -->
+  </div>
+</body>
+</html>

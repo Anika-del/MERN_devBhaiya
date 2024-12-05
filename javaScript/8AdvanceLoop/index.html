@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance llop</title>
+</head>
+<body>
+    <h2> advance loop</h2>
+
+    <script>
+let fruits = ["apple","guava","banana","grapse"];
+// fruits iterable
+
+//for loop
+// for(let i=0; i<fruits.length; i++){
+//   console.log(fruits[i]);
+// }
+
+// forOf loop
+// for(let a of fruits){
+//   console.log(a);
+// }
+
+//for each loop
+// arrayName.forEach(function)
+
+fruits.forEach(a => console.log(a)); // arrow funciton  single paramater and single line of return
+// (a) => {console.log(a)}
+
+fruits.forEach(function(a){
+  console.log(a);
+})
+
+
+let studentName = ["akash", "vikash", "suraj", "vishnu"];
+// studentName.forEach(name => document.write(name +" "));
+
+for(let st of studentName){
+  document.write(st+" ");
+}
+
+//  searching in array 
+// indexOf
+console.log(studentName.indexOf("vishnu"));
+console.log(studentName.indexOf("rahul")); // if the data is not avilable then it return -1
+
+//includes and it returns boolean values
+console.log(studentName.includes("akash")); // true
+console.log(studentName.includes("vinay"));  //false
+
+console.log(studentName.find((a) => console.log() ));
+    </script>
+</body>
+</html>

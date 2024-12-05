@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #F3F3F3;
+  }
+  
+  .menuItems ul li{
+  list-style: none;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  
+  }
+  
+  .menuItems ul li:hover{
+    border-bottom: 1px solid;
+  }
+  
+  .phoneMenuDrop1{
+    display: none;
+  }
+  
+  .phoneMenuDrop2{
+    display: none;
+  }
+  
+  .phoneMenuDrop3{
+    display: none;
+  }
+  
+  .phoneMenuDrop4{
+    display: none;
+  }
+  
+  .phoneMenuDrop5{
+    display: none;
+  }
+  
+  .phoneMenuDrop6{
+    display: none;
+  }
+  
+  .phoneHover2:hover .phoneMenuDrop2{
+    display: block;
+  }
+  
+  .phoneHover3{
+    display: none;
+  }
+  .phoneHover3:hover .phoneMenuDrop3{
+    display: block;
+  }
+  
+  .phoneHover4{
+    display: none;
+  }
+  .phoneHover4:hover .phoneMenuDrop4{
+    display: block;
+  }
+  
+  .phoneHover5{
+    display: none;
+  }
+  .phoneHover5:hover .phoneMenuDrop5{
+    display: block;
+  }
+  
+  .phoneHover6{
+    display: none;
+  }
+  .phoneHover6:hover .phoneMenuDrop6{
+    display: block;
+  }
+  
+  .phoneHover1{
+    display: none;
+  }
+  .phoneHover1:hover .phoneMenuDrop1{
+    display: block;
+  }
+  
+  .menuItems ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  }

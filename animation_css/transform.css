@@ -1,0 +1,24 @@
+div{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: aquamarine;
+	/*transform: rotate(100deg);*/
+	/*transform: rotateX(120deg);
+	transform: rotateY(120deg);*/
+	/*transform: scale(1.5,0.5); horizentol vertical*/
+	/*transform: translate(100deg);*/
+
+
+
+
+	/*transition: 1s ease-in-out;*/
+	/*transition: height 1s ease-in-out;*/
+	transition: height 1s ease-in-out 0.5s;
+}
+div:hover{
+	height: 400px;
+	width: 400px;
+}

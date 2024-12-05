@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #thisDiv{
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      border: 1px solid black;
+    }
+
+  </style>
+</head>
+<body>
+
+   <!-- project thrid EMI-->
+    <form action="#">
+    <div>
+      <label for="loanAmount">Loan Amount</label>
+      <input type="number" id="loanAmount">
+    </div>
+    <br>
+    <div>
+      <label for="loan tenure">Loan Tenure</label>
+      <input type="number" id="tenure">
+    </div>
+    <br>
+    <!-- <div>
+      <select name="monts" id="">
+        <option value="months">months</option>
+        <option value="">years</option>
+      </select>
+    </div> -->
+    <br>
+    <div>
+      <label for="percentage">Iinterest Rate %:</label>
+      <input type="number" id="percentage">
+    </div>
+    <br>
+    <div>
+      <button type="reset">clear</button>
+      <button onclick="findMyEMI()">Submit</button>
+    </div>
+    <br>
+    <div id="finalEmi">
+      your total amout :
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
