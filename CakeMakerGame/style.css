@@ -1,0 +1,217 @@
+body {
+     /* background-color:#000; */
+     width:100vw;
+     height:100vh;
+     margin:0;padding:0;
+     display:flex;
+     /* overflow:hidden; */
+ }
+ #start{
+     height:50px;
+     width:150px;
+     border-radius:100px;
+     color:#000;
+     border:3px solid #000;
+     font-size:40px;
+     display:flex;
+     text-align:center;
+     justify-content:center;
+     align-items:center;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     visibility:hidden;
+     font-family:"Audiowide", sans-serif;;
+ }
+ .cloud{
+     height:50px;width:100px;
+     position:absolute;
+     animation:cld_move 50s infinite linear;
+     top:-50px;
+ }
+ .cloud1{
+     left:20vw;
+ }
+ 
+ 
+ .cloud2{
+     left:70vw;
+     animation-delay:10s;
+ }
+ .cloud3{
+     left:20vw;
+     animation-delay:20s;
+ }
+ .cloud4{
+     left:70vw;
+     animation-delay:30s;
+ }
+ 
+ @keyframes cld_move{
+     0%{top:-50px;}
+     100%{top:100vh;}
+ }
+ #canvas{
+     background-color:rgba(0,100,255,1);
+     position:absolute;
+     left:50%;
+     transform:translateX(-50%);
+    /* background-image:url(https://i.imgur.com/fGw4x2J.jpeg); */
+     background-size:contain;
+     z-index:0;
+ }
+ .star{
+     height:50px;width:50px;z-index:1;
+     position:absolute;
+     transform:translateX(-50%) scale(1);
+     visibility:hidden;
+ }
+ #star1{
+     left:calc(50% - 100px);top:100px;
+ }
+ #star2{
+     left:calc(50% - 50px);top:80px;
+ }
+ #star3{
+     left:50%;top:60px;
+ }
+ #star4{
+     left:calc(50% + 50px);top:80px;
+ }
+ #star5{
+     left:calc(50% + 100px);top:100px;
+ }
+ .anim{
+     animation:st 0.8s 1 ease;
+ }
+ @keyframes st{
+     0%{transform:translateX(-50%) scale(1);}
+     50%{transform:translateX(-50%) scale(1.5);}
+     100%{transform:translateX(-50%) scale(1);}
+ }
+ 
+ #cake_logo{
+     height:200px;width:150px;z-index:1;
+     position:absolute;top:calc(50% - 20px);left:50%;
+     transform:translate(-50%,-50%);
+ }
+ 
+ #loader{
+     height:10px;width:300px;
+     background-color:#fff;
+     position:absolute;
+     top:calc(50% + 100px);left:50%;
+     transform:translate(-50%,-50%);
+     border-radius:50px;
+     overflow:hidden;
+ }
+ #innerloader{
+     height:10px;width:300px;
+     background-color:#0f0;
+     position:absolute;
+     left:-300px;
+     transform:skew(-30deg);
+     animation:load 5s 1 linear;
+ }
+ @keyframes load{
+     from{left:-300px;}
+     to{left:0px;}
+ }
+ 
+ #level{
+     height:300px;width:300px;
+     background-color:rgba(0,0,255,0.5);
+     z-index:1;
+     position:absolute;
+     left:50%;top:45%;
+     transform:translate(-50%,-50%);
+     border-radius:10%;
+     visibility:hidden;
+     border:5px solid #000;
+ }
+ 
+ #level_txt{
+     height:50px;width:200px;
+     background-color:#f1c22d;
+     display:flex;
+     text-align:center;
+     align-items:center;
+     justify-content:center;
+     font-size:35px;
+     font-family: "Courier New", Courier, monospace;
+     position:absolute;
+     left:50%;
+     transform:translateX(-50%);
+     top:-20px;
+     font-weight:bold;
+     border:5px solid #000;
+ }
+ 
+ #level1,#level2,#level3{
+     z-index:1;
+     position:absolute;
+     left:50%;
+     transform:translate(-50%,-50%);
+     height:50px;width:200px;
+     background-color:#eff;
+     display:flex;
+     text-align:center;
+     align-items:center;
+     justify-content:center;
+     font-size:35px;
+     font-family: "Courier New", Courier, monospace;
+     border-width:0 5px 0 5px;
+     border-style:solid;
+     border-color:#000;
+ }
+ #level1{
+     top:calc(50% - 50px);
+ }
+ #level2{
+     top:calc(50% + 20px);
+ }
+ #level3{
+     top:calc(50% + 90px);
+ }
+ 
+ #load_txt{
+     z-index:1;
+     font-size:30px;
+     position:absolute;
+     top:calc(50% + 150px);left:50%;
+     transform:translate(-50%,-50%);
+     font-family: "Courier New", Courier, monospace;
+     font-weight:bold;
+ }
+ 
+ .credit{
+     font-family: "Courier New", Courier, monospace;
+     font-weight:bold;
+     position:absolute;
+     display:flex;
+     text-align:center;
+     justify-content:center;
+     align-items:center;
+     bottom:30px;
+     left:50%;
+     color:#000;
+     transform:translateX(-50%);
+     white-space:nowrap;
+ }
+ #cake_text{
+     height:50px;width:200px;background-color:#0f0;
+     font-size:35px;
+     font-family: "Courier New", Courier, monospace;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     text-align:center;
+     z-index:1;
+     border:4px solid #fff;
+     transform:skew(-15deg) translateX(-50%);
+     position:absolute;
+     top:calc(50% - 200px);
+     left:50%;
+     font-weight:bold;
+ }
