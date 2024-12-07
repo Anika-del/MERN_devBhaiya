@@ -1,0 +1,57 @@
+PS D:\MERN_devBhaiya> git init
+Reinitialized existing Git repository in D:/MERN_devBhaiya/.git/
+PS D:\MERN_devBhaiya> git add .
+warning: in the working copy of 'CSS/calci/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'CSS/image/circleImg.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'CSS/image/circleImg.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'CSS/timeTableShedule/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'CSS/timeTableShedule/style.css', LF will be replaced by CRLF the next time Git touches it
+PS D:\MERN_devBhaiya> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   javaScript/ToDoListDevBhaiya/.vscode/settings.json
+        new file:   javaScript/ToDoListDevBhaiya/index.html
+        new file:   javaScript/ToDoListDevBhaiya/script.js
+        new file:   javaScript/ToDoListDevBhaiya/style.css
+
+PS D:\MERN_devBhaiya> git commit -m "JS BY DEV BHAI"
+[main 94c35ee] JS BY DEV BHAI
+ create mode 100644 javaScript/10ToDoList/git.txt
+ create mode 100644 javaScript/ToDoListDevBhaiya/index.html
+ create mode 100644 javaScript/ToDoListDevBhaiya/script.js
+ create mode 100644 javaScript/ToDoListDevBhaiya/style.css
+PS D:\MERN_devBhaiya> git remote add origin https://github.com/Anika-del/MERN_devBhaiya.git
+error: remote origin already exists.
+PS D:\MERN_devBhaiya> git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+///////////////////////////////////////////////////////////////////
+PS D:\MERN_devBhaiya> git push --set-upstream origin main
+Enumerating objects: 147, done.
+Counting objects: 100% (147/147), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (137/137), done.
+Writing objects: 100% (147/147), 2.54 MiB | 590.00 KiB/s, done.
+Total 147 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/Anika-del/MERN_devBhaiya.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\MERN_devBhaiya>
+
+
+
+
+
+
+
+
+
+
