@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+body {
+   padding:0;
+   margin:0; 
+}
+#container {
+    width:320px;
+    overflow:hidden;
+    position:relative;
+    align:center;
+    left:px;
+} 
+
+#sliderbox {
+    position:relative;
+    width:1280px;
+    animation-name:slideranimation;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    
+} 
+
+img {
+    float:left;
+    width:25%;
+
+} 
+
+@keyframes slideranimation {
+0%
+    {left:0px}
+20%
+    {left:0px}
+25%
+    {left:-320px}
+45%
+    {left:-320px}
+50%
+    {left:-640px}
+70%
+    {left:-640px}
+75%
+    {left:-960px}
+    
+} 
+
+
+        </style>
+    </head>
+    <body>
+    <div id="container">
+        <div id="sliderbox">
+        <img src="http://www.sololearn.com/uploads/slider/2.jpg"/>
+        <img src="http://www.sololearn.com/uploads/slider/3.jpg"/>
+        <img src="http://www.sololearn.com/uploads/slider/1.jpg"/>
+        <img src="http://www.sololearn.com/uploads/slider/3.jpg"/>
+    </div>
+    </div>
+    </body>
+</html>
