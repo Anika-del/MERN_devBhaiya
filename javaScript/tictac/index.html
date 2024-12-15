@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <style>
+    .mainBox {
+      width: 450px;
+      height: 450px;
+      background-color: yellow;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      border: 1px solid;
+    }
+
+    .boxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 7rem;
+      border: 1px solid #000;
+    }
+
+    #resetGame {
+      width: 150px;
+      height: 50px;
+      border: 1px solid;
+      background-color: lightgreen;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="gameWinner">Game Start</div>
+  <div class="mainBox">
+    <div class="boxes" id="box1"></div>
+    <div class="boxes" id="box2"></div>
+    <div class="boxes" id="box3"></div>
+    <div class="boxes" id="box4"></div>
+    <div class="boxes" id="box5"></div>
+    <div class="boxes" id="box6"></div>
+    <div class="boxes" id="box7"></div>
+    <div class="boxes" id="box8"></div>
+    <div class="boxes" id="box9"></div>
+  </div>
+  <div id="resetGame">Reset Game</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
