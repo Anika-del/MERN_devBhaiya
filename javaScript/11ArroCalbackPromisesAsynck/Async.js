@@ -1,4 +1,4 @@
-async function harry(){
+async function anika(){
     let delhiWeather = new Promise((resolve, reject)=>{
         setTimeout(() => {
             resolve("27 Deg")
@@ -24,9 +24,9 @@ return [delhiW, bangloreW]
 }
 
 console.log("Welcome to weather control room")
-harry()
-let a = harry()
-a.then((value) =>{
+anika()
+let a = anika()
+a.then((value) =>{  //resolve ho gya to .then nhi to catch krega .catch
     console.log(value)
 })
 console.log(a)
